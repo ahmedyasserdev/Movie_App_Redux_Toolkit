@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;500;600;700&display=swap');
+@import "./common/colors.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border  : none ; 
+    outline : none ;
+
+}
+
+body {
+    font-family: 'Mohave', sans-serif;
+    font-size: 16px;
+    background-color: $primary;
+    transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+ 
+
+html {
+    font-size: 62.5%;
+
+    @media(max-width : 991px) {
+        font-size: 55%;
+    }
+
+    @media(max-width : 767px) {
+        font-size: 50%;
+    }
+}
+
+a {
+    text-decoration: none ;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block
+}
+
+.container {
+    padding: 3% 5rem;
+    flex: 1;
+
+}

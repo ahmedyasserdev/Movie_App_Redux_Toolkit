@@ -1,0 +1,94 @@
+@import "../../common//colors.scss";
+
+.header {
+  background-color: $secondary;
+  height: 7.2rem;
+  padding: 0 5rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    a {
+      color: $font-primary;
+      font: {
+        size: 2.3rem;
+        weight: 600;
+      }
+    }
+  }
+
+  .user-img {
+    max-width: 5rem;
+  }
+
+  .search {
+    form {
+      padding: .6rem 1.2rem;
+      display: flex;
+      gap : 1.2rem ;
+      .search-input {
+        background-color: transparent;
+        color: $font-primary;
+        padding: inherit;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+
+        &:focus {
+          border: 1px solid;
+        }
+
+        font: {
+          size: 1.7rem;
+          weight: 400;
+        }
+
+        &::placeholder {
+          color: $font-primary;
+        }
+      }
+
+      .search-icon {
+        background-color: transparent;
+        cursor: pointer;
+        transition: 300ms ease;
+        -webkit-transition: 300ms ease;
+        -moz-transition: 300ms ease;
+        -ms-transition: 300ms ease;
+        -o-transition: 300ms ease;
+
+        &:hover {
+          transform: rotate(-30deg);
+          -webkit-transform: rotate(-30deg);
+          -moz-transform: rotate(-30deg);
+          -ms-transform: rotate(-30deg);
+          -o-transform: rotate(-30deg);
+
+          i {
+            color: $font-primary;
+            background-color: $font-secondary;
+          }
+        }
+
+        i {
+          color: $font-secondary;
+          background-color: $font-primary;
+          padding: 6px 8px;
+          border-radius: 4px;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          -o-border-radius: 4px;
+
+          font: {
+            size: 2rem;
+            weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

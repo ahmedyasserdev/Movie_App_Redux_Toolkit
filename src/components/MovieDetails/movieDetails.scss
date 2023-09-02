@@ -1,0 +1,107 @@
+@import "../../common/colors.scss";
+
+
+
+section {
+    display: flex;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    justify-content: space-evenly;
+    color: $font-primary ;
+    flex-wrap: wrap-reverse;
+
+    font : {
+        weight: 400;
+    }
+
+    @media(max-width : 767px) {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+  
+
+    .left {
+
+        max-width: 60rem;
+
+        .title {
+            font-size: 3.3rem;
+            color: $font-primary
+        }
+
+
+        .box {
+            display: flex;
+            padding: 3px;
+            color: $font-secondary;
+            gap: 1rem;
+            padding-block: 1.5rem;
+
+            @media(max-width : 767px) {
+                flex-direction: column;
+            }
+
+
+            i {
+                margin-inline: 2px;
+
+                &.fa-star {
+                    color: #ff9e00;
+                }
+
+                &.fa-thumbs-up {
+                    color: #fafafa;
+                }
+
+                &.fa-film {
+                    color: rgb(191, 213, 214)
+                }
+
+                &.fa-calendar {
+                    color: peachpuff;
+                }
+            }
+        }
+
+        .plot {
+            line-height: 1.7;
+            padding-bottom: 1rem;
+            min-width: 100%;
+
+        }
+
+        .info {
+            & div {
+                padding-block: .8rem;
+            }
+
+            & div span:first-child {
+                color: $font-primary ;
+                font-weight: 600;
+                display: inline-block;
+
+            }
+
+            & div span:last-child {
+                color: $font-secondary ;
+                padding-inline-start: 5px;
+                font-weight: 600;
+
+            }
+        }
+    }
+
+    .right {
+        img {
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+}
+
+    }
+
+}
